@@ -8,31 +8,12 @@ Description: >
 
 Parameters:
     
-    ApplicationName: 
-        Description: This will be used to name the pipeline and build resources
-        Type: String
-        AllowedPattern: '[A-Za-z0-9-]+'
-    
-    ArtifactS3Bucket:
-        Description: An existing S3 bucket within this AWS account
-        Type: String
-
-    GitHubOAuthToken: 
-        Description: Create a token with 'repo' and 'admin:repo_hook' permissions here https://github.com/settings/tokens
-        Type: String
-
-    GitHubUser:
-        Description: Enter GitHub username of the repository owner
-        Type: String
-
-    GitHubRepository:
-        Description: Enter the repository name that should be monitored for changes
-        Type: String
-
-    GitHubBranch:
-        Description: Enter the GitHub branch to monitored
-        Type: String
-        Default: master
+    ApplicationName: gowebserver
+    ArtifactS3Bucket: charkadog.donohutcheon.dev
+    GitHubOAuthToken: f4a5c8184551c05923c60a373c1b7015e22b5ae6
+    GitHubUser: donohutcheon
+    GitHubRepository: golang-deployment-pipeline
+    GitHubBranch: master
 
 Metadata:
 
